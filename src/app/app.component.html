@@ -1,3 +1,12 @@
 
+    <mat-sidenav-container>
+        <mat-sidenav [(opened)]="opened">sidenave</mat-sidenav>
+      <mat-sidenav-content> main 
+            <button (click)="opened=!opened">Toggle opened</button>
+    </mat-sidenav-content>
+    </mat-sidenav-container>
+    
+
+
 
 <router-outlet></router-outlet>

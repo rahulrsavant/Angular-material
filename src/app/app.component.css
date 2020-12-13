@@ -1,0 +1,12 @@
+.mat-sidenav-container{
+    height: 100%;
+}
+
+.mat-sidenav-content{
+    padding:16px;
+}
+
+.mat-sidenav{
+    background-color: cornflowerblue;
+    width: 200px;
+}
