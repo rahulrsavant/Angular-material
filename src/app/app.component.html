@@ -1,3 +1,8 @@
+<mat-menu #abcd="matMenu">
+    <button mat-menu-item>FrontEnd</button>
+    <button mat-menu-item>BackEnd</button>
+</mat-menu>
 
+<button mat-flat-button [matMenuTriggerFor]="abcd">Menu</button>
 
 <router-outlet></router-outlet>
