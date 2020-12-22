@@ -10,15 +10,16 @@ import { EmployeeService } from '../employee.service';
 export class EmployeeListComponent implements OnInit {
     public employees:IEmployee[];
 
-    private _employeeService: EmployeeService;
+  
 
-  constructor(private _employeeService1: EmployeeService) 
+  constructor(private _employeeService: EmployeeService) 
   { 
-    this._employeeService=_employeeService1;
+    this.employees=this._employeeService.getEmployee();
   }
 
   ngOnInit(): void {
-        console.log(this._employeeService.getEmployee());
+    console.log("Employee List : ")
+        console.log(this.employees);
   }
 
 }
